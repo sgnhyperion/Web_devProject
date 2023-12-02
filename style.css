@@ -1,0 +1,127 @@
+*{
+    text-decoration: none;
+    overflow-x: hidden;
+}
+#h_ome{
+    height:100vh;
+    width:100vw;
+    background-image: linear-gradient(to bottom, rgba(98, 161, 170, 0.199), rgba(160, 233, 240, 0.158)), url('https://www.cambri.io/hubfs/Imported_Blog_Media/file-Nov-11-2021-09-05-57-02-AM.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    color:aliceblue;
+    margin:0;
+    padding:0;
+}
+header{
+    height:auto;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display:flex;  
+    width:90vw; 
+    padding:2rem;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    top:0px;
+}
+.nav_bar{
+    display:flex;
+    gap:70px;
+    color:rgba(240, 241, 255, 0.623);  
+    position:sticky;
+}
+.navs{
+    color:rgba(240, 246, 255, 0.815);
+    font-weight: 900;
+    
+}
+.center{
+    width:100%;
+    position:relative;
+    top:30vh;
+    left:35vw;
+}
+.ipsum{
+    font-size: 35px;
+    position:relative;
+    left:30px;
+    font-weight: bold;
+}
+.dropdown{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    background-image:linear-gradient(to bottom, rgba(98, 161, 170, 0.199), rgba(160, 233, 240, 0.158)), url('https://www.cambri.io/hubfs/Imported_Blog_Media/file-Nov-11-2021-09-05-57-02-AM.jpg');
+    font-weight: 200px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    border-color:aquamarine;
+}
+#about_us{
+    background-image: url("https://images.ctfassets.net/76f8cs5bg9si/7BkQ7dhjPci0ThWd2yrJHj/4aed4bda5695a094a69c0f445f71f0fe/Untitled-design-23-copy-2.png?w=800&h=580&q=100&fm=webp");
+    background-size:cover;
+    background-repeat: no;
+    width:100vw;
+    height:70vh;
+    position:relative;
+    padding-top:50px;
+    color:black;
+    display:flex;
+    gap:60px;
+}
+.paraimg{
+    height:60vh;
+    width:40vw;
+}
+.paraworm{
+    height:60vh;
+    width:50vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    
+}
+nav .navs:hover{
+    color:rgb(76, 160, 216);
+    cursor:pointer;
+    transition: all 0.5s ease;
+}
+.dropdown:hover{
+    color:rgb(76, 160, 216);
+    cursor:pointer;
+    transition: all 0.5s ease;
+}
+#services{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+#services>div{
+    height:100vh;
+    width:80%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+}
+.foursec1{
+    display:flex;
+    justify-content: space-evenly;
+    height:200px;
+}
+.serv1{
+    padding: 20px;
+    height:100vh;
+    width:20%;
+    border:blue 5px;
+}
+h4{
+    position:relative;
+    left:90px;
+    font-size: larger;
+}
