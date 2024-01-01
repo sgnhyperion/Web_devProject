@@ -1,127 +1,482 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 *{
-    text-decoration: none;
-    overflow-x: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x:hidden;
 }
-#h_ome{
-    height:100vh;
-    width:100vw;
-    background-image: linear-gradient(to bottom, rgba(98, 161, 170, 0.199), rgba(160, 233, 240, 0.158)), url('https://www.cambri.io/hubfs/Imported_Blog_Media/file-Nov-11-2021-09-05-57-02-AM.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    color:aliceblue;
+body{
     margin:0;
     padding:0;
 }
-header{
-    height:auto;
-    font-size: larger;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display:flex;  
-    width:90vw; 
-    padding:2rem;
+#home{
+    height:100vh;
+    width:100vw;
+    /* background-image: url('https://i0.wp.com/indiacurrents.com/wp-content/uploads/2023/02/1601_v0-scaled.jpg?resize=2048%2C1365&ssl=1'); */
+    background-image: linear-gradient(to right, rgba(68, 148, 141, 0.205), rgba(43, 120, 126, 0.4)), url('https://i0.wp.com/indiacurrents.com/wp-content/uploads/2023/02/1601_v0-scaled.jpg?resize=2048%2C1365&ssl=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav{
+    left:20px;
+    width:100vw;
+    display:flex;
     justify-content: space-between;
-    align-items: center;
-    position:fixed;
-    top:0px;
-}
-.nav_bar{
-    display:flex;
-    gap:70px;
-    color:rgba(240, 241, 255, 0.623);  
-    position:sticky;
-}
-.navs{
-    color:rgba(240, 246, 255, 0.815);
-    font-weight: 900;
-    
-}
-.center{
-    width:100%;
-    position:relative;
-    top:30vh;
-    left:35vw;
-}
-.ipsum{
-    font-size: 35px;
-    position:relative;
-    left:30px;
-    font-weight: bold;
-}
-.dropdown{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: aliceblue;
-    background-image:linear-gradient(to bottom, rgba(98, 161, 170, 0.199), rgba(160, 233, 240, 0.158)), url('https://www.cambri.io/hubfs/Imported_Blog_Media/file-Nov-11-2021-09-05-57-02-AM.jpg');
-    font-weight: 200px;
-    font-size: 1.5rem;
-    border-radius: 20px;
-    border-color:aquamarine;
+    padding:3rem;
+    align-items: center;
+    text-shadow:  1px 1px 0 #999, 2px 2px 0 #888, 3px 3px 0 #777;
+    z-index: 10;
 }
-#about_us{
-    background-image: url("https://images.ctfassets.net/76f8cs5bg9si/7BkQ7dhjPci0ThWd2yrJHj/4aed4bda5695a094a69c0f445f71f0fe/Untitled-design-23-copy-2.png?w=800&h=580&q=100&fm=webp");
-    background-size:cover;
-    background-repeat: no;
+.navbar{
+    display:flex;
+    width:70%;
+    justify-content: space-evenly;
+}
+.navbar a{
+    text-decoration: none;
+    color:aliceblue;
+}
+.nav span{
+    font-size: 50px;
+    font-weight:bold;
+}
+header{
     width:100vw;
-    height:70vh;
-    position:relative;
-    padding-top:50px;
-    color:black;
     display:flex;
-    gap:60px;
-}
-.paraimg{
-    height:60vh;
-    width:40vw;
-}
-.paraworm{
-    height:60vh;
-    width:50vw;
-    display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;
-    
+    position:absolute;
+    bottom:400px;
+    color: aliceblue;
+    text-shadow:  1px 1px 0 #999, 2px 2px 0 #888, 3px 3px 0 #777;
+
 }
-nav .navs:hover{
-    color:rgb(76, 160, 216);
-    cursor:pointer;
-    transition: all 0.5s ease;
+
+.navbar a:hover{
+    color:aliceblue;
+    /* background-color: rgba(255, 255, 255, 0.397); */
+    transform:scale(1.3);
+    /* color: blueviolet; */
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
 }
-.dropdown:hover{
-    color:rgb(76, 160, 216);
-    cursor:pointer;
-    transition: all 0.5s ease;
-}
-#services{
+
+#about_us{
     width:100vw;
-    height:100vh;
+    height:60vh;
+    background-image: url('https://wallpapercave.com/wp/wp4889328.jpg');
     display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+    justify-content: space-evenly;
+    align-items: center;
 }
-#services>div{
-    height:100vh;
-    width:80%;
+.a0{
     display:flex;
     flex-direction: column;
     align-items: center;
-    background-color: aliceblue;
+    width:33%;
+    padding:50px;
+    row-gap: 20px;
 }
-.foursec1{
+.a1{
     display:flex;
-    justify-content: space-evenly;
-    height:200px;
+    flex-direction: column;
+    align-items: center;
+    width:30%;
+    padding:50px;
+    row-gap: 20px;
+}
+.a2{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:30%;
+    padding:50px;
+    row-gap: 20px;
+}
+.abutton{
+    background-color: rgba(8, 132, 214, 0.459);
+    color: aliceblue;
+    border: 1px rgba(127, 255, 212, 0.555);
+    border-radius: 200px;
+    height:30px;
+    width:110px;
+}
+.abutton:hover{
+    background-color: rgba(128, 255, 0, 0.267);
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.head{
+    position:relative;
+    right:60px;
+    font-size: larger;
+    background: url('servicesbg.png');
+    background-size: cover;
+    background-repeat: no;
+    width:10vw;
+    text-align: center;
+}
+
+#services{
+    padding-top:50px;
+    height:78vh;
+    width:100vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: azure;
 }
 .serv1{
-    padding: 20px;
-    height:100vh;
-    width:20%;
-    border:blue 5px;
+    width:100vw;
+    display:flex;
+    padding:50px;
+    justify-content: center;
+    
 }
-h4{
+.paraserv{
+    width:60%;
+    text-align: center;
+}
+.serv1 p{
+    width:60%;
+}
+.serv1 div{
+    border: 2px solid gray;
+    margin-right:20px;
     position:relative;
-    left:90px;
-    font-size: larger;
+    left:20px;
+    width:15%;
+    height:200px;
+    border-radius: 10px;
+    box-shadow:5px 4px 10px;
+    padding-left: 60px;
 }
+.serv2{
+    display:flex;
+    width:100vw;
+    padding:50px;
+    justify-content: space-evenly;
+    color:rgb(10, 66, 66);
+    background-color:rgba(209, 230, 248, 0.575) ;
+}
+.action{
+    width:100vw;
+    height:30vh;
+    background-image: linear-gradient(to right, rgba(68, 123, 148, 0.753), rgba(43, 96, 126, 0.63)), url('https://i0.wp.com/indiacurrents.com/wp-content/uploads/2023/02/1601_v0-scaled.jpg?resize=2048%2C1365&ssl=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: aliceblue;
+    z-index: 0;
+}
+.actbut{
+    height: 30px;
+    width:120px;
+    border:1px solid white;
+    border-radius:40px;
+    color:azure;
+    background-image: linear-gradient(to right, rgba(68, 123, 148, 0.753), rgba(43, 96, 126, 0.63)), url('https://i0.wp.com/indiacurrents.com/wp-content/uploads/2023/02/1601_v0-scaled.jpg?resize=2048%2C1365&ssl=1');
+    z-index:5;
+}
+.actbut:hover{
+    color: rgba(31, 100, 156, 0.932);
+    background-color: rgb(153, 0, 255);
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    gap:30px;
+    background-color: azure;
+}
+.portnav{
+    text-decoration: none;
+    font-weight:bold;
+    color:rgba(16, 19, 19, 0.774);
+}
+.portnav:hover{
+    transition: all 0.5s ease-out;
+    color:rgb(56, 146, 146);
+}
+.testimonials{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.testbox{
+    border:1px solid rgba(139, 147, 155, 0.336);
+    box-shadow:10px 10px 20px;
+    width:20vw;
+    height:20vh;
+    text-align: center;
+    display:flex;
+    align-items: center;
+}
+.testimg{
+    height:130px;
+    width:130px;
+    border-radius: 10000px;
+}
+.testd{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+}
+.testdetail{
+    width:20vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+
+/* do */
+
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding: 50px 20px;
+    background: #f0f0f0; /* Example background color */
+    margin-top: 50px;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-address,
+.contact-email,
+.contact-phone {
+    margin-bottom: 20px;
+}
+
+.icon-location,
+.icon-email,
+.icon-phone {
+    /* Style your icons here */
+}
+
+.contact-form {
+    max-width: 600px;
+    margin-left: auto; /* Align the form on the right */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Base styles are not repeated here */
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+    .section, #about, .portfolio, .contact-section {
+        width: 100%; /* Adjust width to 100% for smaller screens */
+        padding: 20px; /* Reduce padding */
+    }
+
+    #navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    #navbar li {
+        margin-bottom: 10px; /* Add some space between menu items */
+    }
+
+    #home h2 {
+        font-size: 1.2rem; /* Smaller font size for headings */
+    }
+
+    #home span {
+        font-size: 3rem; /* Smaller font size for large text */
+    }
+
+    .features, .service-cards, .team-members, .contact-details {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .feature-item, .service-card, .team-member, .contact-address, .contact-email, .contact-phone {
+        width: 100%; /* Full width for these items */
+        margin-bottom: 20px; /* Add some space between items */
+    }
+
+    .feature-item img, .service-card img, .stat img {
+        width: 40px; /* Smaller image size */
+        height: 40px; /* Keep aspect ratio */
+    }
+
+    .stat {
+        flex-basis: auto; /* Allow stats to take necessary space */
+    }
+
+    .contact-form {
+        width: 100%; /* Full width for the form */
+        margin: 0; /* Reset any margins */
+    }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+    #home h2 {
+        font-size: 1rem; /* Even smaller font size for headings */
+    }
+
+    #home span {
+        font-size: 2.5rem; /* Smaller font size for large text */
+    }
+
+    #navbar {
+        flex-direction: column; /* Stack navbar items vertically */
+    }
+
+    #navbar ul {
+        width: 100%; /* Full width for the navbar */
+    }
+
+    #back-to-top {
+        font-size: 16px; /* Smaller arrow icon */
+        padding: 8px; /* Smaller button */
+        width: 32px; /* Smaller button */
+        height: 32px; /* Smaller button */
+    }
+}
+
+/* You can add more media queries for different screen sizes as needed */
+/* Base and other styles are not repeated here */
+
+/* Media query for screens up to 600px wide */
+@media (max-width: 600px) {
+    #navbar {
+        display: none; /* Hide the navbar */
+    }
+
+    /* Adjust the font sizes for smaller screens */
+    #home h2, .services-title, .team-title, .portfolio-title {
+        font-size: 1.4rem; /* Smaller font size for headings */
+    }
+
+    #home span, .stat h3 {
+        font-size: 2.2rem; /* Smaller font size for large text and stats */
+    }
+
+    /* Adjust the padding and layout for sections */
+    .section, #about, .portfolio, .contact-section, .team, .stats, .services {
+        padding: 15px; /* Reduce padding */
+        /* Ensure that the width is not set to a fixed value to allow for padding */
+    }
+
+    /* Adjust the width and margins for feature items, service cards, and team members */
+    .feature-item, .service-card, .team-member {
+        width: 100%; /* Full width for these items */
+        margin-bottom: 15px; /* Adjust the space between items */
+    }
+
+    /* Adjust image sizes for smaller screens */
+    .feature-item img, .service-card img, .stat img, .team-member img {
+        width: 40px; /* Adjust image width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Adjust form input fields and button size */
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea,
+    .contact-form button {
+        font-size: 0.8rem; /* Smaller font size for form elements */
+    }
+
+    /* Adjust the back-to-top button size */
+    #back-to-top {
+        font-size: 16px; /* Smaller arrow icon */
+        padding: 8px; /* Smaller button padding */
+        width: 32px; /* Smaller button width */
+        height: 32px; /* Smaller button height */
+        bottom: 15px; /* Adjust the position from the bottom */
+        right: 15px; /* Adjust the position from the right */
+    }
+
+    /* Additional adjustments as needed */
+}
+
+/* Continue with other responsive styles for different breakpoints */
+@media (max-width: 600px) {
+    /* About section specific styles for small screens */
+    #about {
+        flex-direction: column; /* Stack flex items vertically */
+        align-items: center; /* Center align the flex items */
+        padding: 20px; /* Adjust padding */
+        text-align: center; /* Center-align text */
+    }
+
+    #about .about-content,
+    #about .features {
+        width: 100%; /* Full width for child elements */
+        max-width: none; /* Override any max-width set */
+    }
+
+    #about h2 {
+        font-size: 1.5rem; /* Adjust font size for the heading */
+        margin-bottom: 20px; /* Add some space below the heading */
+    }
+
+    #about p {
+        font-size: 1rem; /* Adjust the font size for paragraph text */
+    }
+
+    #about .about-button {
+        margin-top: 20px; /* Add space above the button */
+    }
+
+    #about .feature-item {
+        width: 100%; /* Each feature item takes full width */
+        margin-bottom: 20px; /* Add space between feature items */
+    }
+
+    #about .feature-item img {
+        margin: auto; /* Center images within their container */
+        display: block; /* Ensure images are block level to respond to margin: auto */
+    }
+
+    #about .feature-item h3,
+    #about .feature-item p {
+        font-size: 1rem; /* Adjust font size for feature titles and descriptions */
+    }
+}
+
+
